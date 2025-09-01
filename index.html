@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grow with English Games</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fdf6ec;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #6b4226;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h1 img {
+      height: 40px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+    .game-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+    .game-card img.thumbnail {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .game-card h2 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #6b4226;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .game-card h2 img {
+      height: 22px;
+    }
+    .game-card a {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #6b4226;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .game-card a:hover {
+      background: #8b5e3c;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <img src="logo.png" alt="Grow with English Logo">
+    Grow with English - Games Hub
+  </h1>
+
+  <div class="game-grid">
+    <!-- Episode 1 -->
+    <div class="game-card">
+      <img src="episode01-coffee-words/thumbnail.png" class="thumbnail" alt="Starbucks Coffee Words Game">
+      <h2>
+        <img src="episode01-coffee-words/coffee-icon.png" alt="Coffee Icon">
+        Episode 1: Starbucks Coffee Words
+      </h2>
+      <a href="episode01-coffee-words/index.html">Play Game</a>
+    </div>
+  </div>
+</body>
+</html>
